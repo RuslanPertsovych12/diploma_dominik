@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="uk" data-theme="dark">
+<html lang="uk" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Палітра з дизайну: #D9E2E6, #B7A798, #6C696A, #334655, #051711 */
-        :root, [data-theme="dark"] {
+        :root, [data-theme="light"] {
             --bg: #e8ecf0;
             --bg-card: #ffffff;
             --bg-card-hover: #fafbfc;
@@ -42,7 +42,8 @@
             --color-sage: #334655;
             --color-accent: var(--accent);
         }
-        [data-theme="light"] {
+        [data-theme="light
+        "] {
             --bg: #0d1412;
             --bg-card: #151f1c;
             --bg-card-hover: #1a2622;
@@ -117,7 +118,7 @@
             padding-right: 2.5rem;
             cursor: pointer;
         }
-        [data-theme="dark"] .form-select {
+        [data-theme="light"] .form-select {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239ca3a6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
             box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
         }
@@ -140,8 +141,8 @@
         main a:not(.btn):hover { color: var(--accent-hover); }
         .card-premium .card-title, .card-premium .card-text, .card-premium .card-body { color: var(--text) !important; }
         .card-premium .card-body .text-muted { color: var(--text-muted) !important; }
-        [data-theme="dark"] .text-muted { color: #b8b2aa !important; }
-        [data-theme="dark"] .card-premium .card-body .text-muted { color: #b8b2aa !important; }
+        [data-theme="light"] .text-muted { color: #b8b2aa !important; }
+        [data-theme="light"] .card-premium .card-body .text-muted { color: #b8b2aa !important; }
         .alert {
             font-size: 1rem;
             font-weight: 500;
@@ -159,30 +160,30 @@
             border-color: var(--accent);
             color: #051711 !important;
         }
-        [data-theme="dark"] .alert-success { background: rgba(122, 156, 173, 0.2); color: #e8ecf0 !important; border-color: var(--accent); }
+        [data-theme="light"] .alert-success { background: rgba(122, 156, 173, 0.2); color: #e8ecf0 !important; border-color: var(--accent); }
         .alert-info {
             background: #d6eef8;
             border-color: #0aa2c0;
             color: #0a3d4a !important;
         }
-        [data-theme="dark"] .alert-info { background: #0d3d4a; border-color: #0dcaf0; color: #e0f6fc !important; }
+        [data-theme="light"] .alert-info { background: #0d3d4a; border-color: #0dcaf0; color: #e0f6fc !important; }
         .alert-warning {
             background: #f5ecd4;
             border-color: #d4a005;
             color: #4a3d02 !important;
         }
-        [data-theme="dark"] .alert-warning { background: #4a4010; border-color: #ffc107; color: #f5ecd4 !important; }
+        [data-theme="light"] .alert-warning { background: #4a4010; border-color: #ffc107; color: #f5ecd4 !important; }
         .alert-danger, .alert-error {
             background: #f5d8d8;
             border-color: #c82333;
             color: #5c2020 !important;
         }
-        [data-theme="dark"] .alert-danger, [data-theme="dark"] .alert-error { background: #4a2020; border-color: #dc3545; color: #fde0e0 !important; }
+        [data-theme="light"] .alert-danger, [data-theme="light"] .alert-error { background: #4a2020; border-color: #dc3545; color: #fde0e0 !important; }
         .alert .btn-close { opacity: 0.9; }
         .alert-success .btn-close { filter: brightness(0); }
         .alert-info .btn-close, .alert-warning .btn-close, .alert-danger .btn-close, .alert-error .btn-close { filter: brightness(0); }
-        [data-theme="dark"] .alert-success .btn-close { filter: brightness(0); }
-        [data-theme="dark"] .alert-info .btn-close, [data-theme="dark"] .alert-warning .btn-close, [data-theme="dark"] .alert-danger .btn-close, [data-theme="dark"] .alert-error .btn-close { filter: brightness(0) invert(1); }
+        [data-theme="light"] .alert-success .btn-close { filter: brightness(0); }
+        [data-theme="light"] .alert-info .btn-close, [data-theme="light"] .alert-warning .btn-close, [data-theme="light"] .alert-danger .btn-close, [data-theme="light"] .alert-error .btn-close { filter: brightness(0) invert(1); }
         .btn-outline-secondary { color: var(--text-muted) !important; border-color: var(--border); background: var(--bg-card); }
         .btn-outline-secondary:hover { color: var(--text) !important; background: var(--border); border-color: var(--border); }
         select.form-select option { background: var(--bg-card); color: var(--text); }
@@ -201,7 +202,7 @@
             transition: background 0.3s, border-color 0.3s;
             box-shadow: 0 1px 0 rgba(255,255,255,0.03);
         }
-        [data-theme="dark"] .site-nav { box-shadow: 0 1px 0 rgba(0,0,0,0.15); }
+        [data-theme="light"] .site-nav { box-shadow: 0 1px 0 rgba(0,0,0,0.15); }
         .site-nav .brand {
             font-weight: 700;
             font-size: 1.3125rem;
@@ -224,7 +225,7 @@
         }
         .site-nav .nav-link:hover { color: var(--text) !important; background: var(--accent-soft); }
         .site-nav .nav-link.active { color: #253340 !important; background: rgba(51, 70, 85, 0.2); font-weight: 600; }
-        [data-theme="dark"] .site-nav .nav-link.active { background: rgba(217, 226, 230, 0.22); color: #e8ecf0 !important; }
+        [data-theme="light"] .site-nav .nav-link.active { background: rgba(217, 226, 230, 0.22); color: #e8ecf0 !important; }
         .theme-btn {
             width: 36px;
             height: 36px;
@@ -272,7 +273,7 @@
         .team-card:hover { transform: scale(1.02) translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         .btn { transition: all 0.3s var(--ease); }
         .btn:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        [data-theme="dark"] .card-premium:hover { box-shadow: var(--shadow-hover), 0 0 0 1px rgba(212, 146, 120, 0.2); }
+        [data-theme="light"] .card-premium:hover { box-shadow: var(--shadow-hover), 0 0 0 1px rgba(212, 146, 120, 0.2); }
         .card-premium img { transition: transform 0.6s var(--ease-smooth); }
         .card-premium:hover img { transform: scale(1.05); }
         /* Блок фото в картках оголошень: однакові пропорції, фото завжди заповнюють область */
@@ -341,7 +342,7 @@
             background-size: 1rem 0.75rem;
             padding-right: 2.25rem;
         }
-        [data-theme="dark"] .form-select {
+        [data-theme="light"] .form-select {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239ca3a6'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
         }
         .form-control::placeholder { color: var(--text-muted); opacity: 0.8; }
@@ -397,7 +398,7 @@
         .accordion-button:not(.collapsed) { background: var(--accent-soft) !important; color: var(--text) !important; }
         .accordion-body { background: var(--bg-card); color: var(--text); }
         .accordion-button::after { filter: invert(0); }
-        [data-theme="dark"] .accordion-button::after { filter: invert(1); }
+        [data-theme="light"] .accordion-button::after { filter: invert(1); }
         .pagination .page-link { background: var(--bg-card); color: var(--text); border-color: var(--border); }
         .pagination .page-item.active .page-link { background: var(--accent); border-color: var(--accent); color: #fff; }
         .pagination .page-link:hover { background: var(--accent-soft); color: var(--text); }
